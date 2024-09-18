@@ -222,7 +222,13 @@
         L.marker(landmark.coords).addTo(map)
             .bindPopup("<b>" + landmark.name + "</b><br>" + landmark.description);
     });
-</script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
 
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
 </body>
 </html>
