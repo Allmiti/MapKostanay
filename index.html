@@ -65,6 +65,20 @@
         }
     </style>
 </head>
+
+<button id="themeToggle">Переключить тему</button>
+<script>
+    document.getElementById('themeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+<style>
+    body.dark-mode {
+        background-color: #333;
+        color: white;
+    }
+</style>
+
 <body>
 
     <!-- Баннер -->
