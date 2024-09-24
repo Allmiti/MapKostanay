@@ -11,13 +11,37 @@
             padding: 0;
 			background-color: #F0F8FF;
         }
-
+		
         /* Стили для баннера */
         .banner {
             background-color: #00008B;
             color: white;
             text-align: center;
             padding: 20px;
+        }
+		/* Контейнер для кнопок */
+        .button-container {
+            text-align: center;
+        }
+
+        /* Стили для кнопок */
+        .nav-button {
+            display: inline-block;
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #3498db;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #2980b9;
         }
 
         /* Стили для выдвижной панели */
@@ -93,6 +117,13 @@
     </style>
 </head>
 <body>
+
+<div class="button-container">
+    <a href="page1.html" class="nav-button">Страница 1</a>
+    <a href="page2.html" class="nav-button">Страница 2</a>
+    <a href="page3.html" class="nav-button">Страница 3</a>
+</div>
+
 
     <!-- Баннер -->
     <div class="banner">
