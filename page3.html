@@ -117,6 +117,10 @@
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
         }
+		 // Переключение темы
+    document.getElementById('themeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
     </script>
 
 </body>
