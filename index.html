@@ -63,22 +63,34 @@
             margin-left: 20px;
             padding: 20px;
         }
+		
+        /* Кнопка переключения темы */
+        #themeToggle {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Темная тема */
+        body.dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        body.dark-mode #sidebar {
+            background-color: #444;
+        }
+
+        body.dark-mode #themeToggle {
+            background-color: #eee;
+            color: #333;
+        }
     </style>
 </head>
-
-<button id="themeToggle">Переключить тему</button>
-<script>
-    document.getElementById('themeToggle').addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-    });
-</script>
-<style>
-    body.dark-mode {
-        background-color: #333;
-        color: white;
-    }
-</style>
-
 <body>
 
     <!-- Баннер -->
@@ -93,6 +105,7 @@
         <a href="page1.html">Карта священных мест</a>
         <a href="page2.html">О проекте</a>
         <a href="page3.html">10 мест государственной важности</a>
+		<button id="themeToggle">Переключить тему</button>
     </div>
 
     <button class="openbtn" onclick="openNav()">☰ Открыть меню</button>
