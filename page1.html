@@ -6,6 +6,12 @@
     <title>Сокральные объекты Костанайской области</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <style>
+	.map-wrapper {
+            padding: 20px; /* Внутренние отступы для создания пространства вокруг карты */
+            background-color: rgba(255, 255, 255, 0.8); /* Белый полупрозрачный фон для контраста */
+            border-radius: 15px; /* Закругление углов */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Тень для эффекта приподнятости */
+        }
         #map {
             height: 600px;
             width: 100%;
@@ -23,6 +29,10 @@
             color: white;
             text-align: center;
             padding: 20px;
+			background-image: url('C:\Users\user\Desktop\MapKostanay\icons\Background 194.png'); /* Путь к изображению текстуры */
+            background-size: cover; /* Изображение покрывает весь фон */
+            background-position: center; /* Центрирование изображения */
+            background-repeat: no-repeat; /* Отключение повторения */
         }
 		.sidebar {
             height: 100%;
@@ -111,7 +121,10 @@
 
     <button class="openbtn" onclick="openNav()">☰ Открыть меню</button>
 	
+	
+<div class="map-wrapper">
 <div id="map"></div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
