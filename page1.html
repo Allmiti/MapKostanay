@@ -135,12 +135,19 @@
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+	var icon1 = L.icon({
+    iconUrl: 'C:\Users\user\Desktop\MapKostanay\icons\icons8-маркер-50.png',
+    iconSize: [30, 40],
+    iconAnchor: [15, 40],
+    popupAnchor: [0, -40]
+});
     // Массив с данными о достопримечательностях
     var landmarks = [
         {
             "name": "Свято-Никольская церковь",
             "coords": [54.49829907102088, 65.76609069096548],
             "description": "Свято-Никольская церковь — самый старинный православный храм на территории Костанайской области. Громадная церковь из бутового камня и обожженного кирпича была построена в 1799 году на пожертвования местных жителей. <a href='https://taran-musey.kz/2020/07/28/svyato-nikolskaya-czerkov/' target='_blank'>Подробнее</a>"
+		    "icon": icon1
 		},
         {
             "name": "Тургайские святилища (Костанайские геоглифы)",
